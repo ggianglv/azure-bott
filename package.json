@@ -1,0 +1,42 @@
+{
+    "name": "skype-bott",
+    "version": "1.0.0",
+    "description": "Demonstrate the core capabilities of the Microsoft Bot Framework",
+    "author": "Generated using Microsoft Bot Builder Yeoman generator v4.7.0",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "start": "babel-node ./index.js",
+        "start:dev": "nodemon --exec babel-node ./index.js",
+        "clean": "rm -rf build && mkdir build",
+        "build-babel": "babel -d ./build ./index.js -s",
+        "build": "npm run clean && npm run build-babel"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com"
+    },
+    "dependencies": {
+        "@babel/cli": "^7.14.5",
+        "@babel/core": "^7.14.6",
+        "botbuilder": "^4.13.6",
+        "dotenv": "^8.2.0",
+        "puppeteer": "^10.1.0",
+        "restify": "~8.4.0"
+    },
+    "devDependencies": {
+        "@babel/node": "^7.14.7",
+        "@babel/plugin-transform-runtime": "^7.14.5",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.14.7",
+        "@babel/runtime": "^7.14.6",
+        "eslint": "^7.30.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-standard": "^14.1.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-standard": "^4.0.1",
+        "nodemon": "^2.0.9"
+    }
+}
