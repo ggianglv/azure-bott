@@ -9,5 +9,5 @@ export const getReply = async (context) => {
     return MessageFactory.text(replyText, replyText)
   }
 
-  return 'test'
+  return 'Pong'
 }
