@@ -47,7 +47,7 @@ export const getStockReport = async () => {
   })
   let text = ''
   result.forEach((row) => {
-    text += `${row.join('&nbsp;&nbsp;&nbsp;&nbsp;')}\n\n`
+    text += `${row.join(' ')}\n\n`
   })
   await browser.close()
   return text
